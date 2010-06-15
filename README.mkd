@@ -6,8 +6,16 @@ This package can be used to generate a Python egg for the HBase thrift bindings.
 Installation
 ============
 
-    $ make
-    $ sudo easy_install dist/*.egg
+    $ sudo add-apt-repository "deb http://apt.pub.simplegeo.com/ubuntu foss-development main"
+    $ sudo aptitude update
+    $ sudo aptitude install simplegeo-keyring
+    $ sudo aptitude update
+    $ sudo aptiutde install python-hbase
+
+    OR
+
+    $ make sdist
+    $ sudo easy_install dist/*.tar.gz
 
 Usage
 =====
