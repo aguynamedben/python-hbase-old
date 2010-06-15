@@ -23,7 +23,7 @@ $(SCRIPTDIR)/Hbase-remote: $(SRCDIR)/Hbase-remote
 		< $^ > $@
 	chmod --reference $^ $@
 
-$(GENDIR)/gen-py: HBase.thrift
+$(GENDIR)/gen-py: Hbase.thrift
 	-mkdir -p $(GENDIR)
 	thrift -o $(GENDIR) -gen py:new_style=True  $^
 
